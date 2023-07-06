@@ -1,38 +1,134 @@
-.App {
+
+
+
+.main{
+    width:max-content;
+    background-color:lightsalmon;
+    position: relative;
+  
+    margin: auto;
+    width: 50em;
+    height: 41em;
+    padding-top:16px;
+    box-sizing: border-box;
+    box-shadow: 0 4px 8px 0 rgb(0, 0, 0), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+   
+  
+}
+
+
+fieldset{
+background-color:lightgrey;
+border: 2px solid rgb(20, 17, 17);
+width: fit-content;
+margin: auto;
+margin-top: 10px;
+box-shadow: 0 4px 8px 0 rgb(0, 0, 0), 0px 6px 20px 6px rgba(0, 0, 0, 0.19); 
+}
+
+.todolist{
+    width: 60%;
+    background-color: lightgray;
+    text-align: center;
+    margin: auto;
+    margin-top: 16px;
+    box-shadow: 0 4px 8px 0 rgb(0, 0, 0), 0px 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+
+.clist{
+    /* background-color:lightgrey;
+    border: 2px solid rgb(20, 17, 17); */
+    width: 90%;
+    height: 45%;
+    margin: auto;
+    margin-top: 10px;
+    /* box-shadow: 0 4px 8px 0 rgb(0, 0, 0), 0px 6px 20px 6px rgba(0, 0, 0, 0.19);   */
+    padding: 16px;
+    overflow: scroll;
+
+}
+
+.clist::-webkit-scrollbar {
+  display: none;
+}
+
+
+
+#dtodo{
+    width:96%;
+    border: 1px solid black;
+    margin-bottom: 16px;
+    padding: 0.5em;
+    padding-top: 0;
+    padding-top:0em;
+    background-color:rgb(211, 211, 211);
+   
+    box-shadow: 0 4px 8px 0 rgb(0, 0, 0), 0px 6px 20px 0 rgba(0, 0, 0, 0.19);
+    position: relative;
+   
+}
+
+#dtodo2{
+  display: inline-block;
+  width: 62%;
+
   text-align: center;
+  box-sizing: border-box;
+}
+#dtodo3{
+    display:inline-block;
+    width: 19%;
+    height: fit-content;
+    box-sizing: border-box;
+    text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+#dtodo4{
+    display:inline-block;
+    width: 19%;
+    box-sizing: border-box;
+    text-align: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+#delimg{
+    width: 70px;
+  margin: 16px;
+      }
+
+.todoname{
+    
+   background-color: rgb(253, 253, 253);
+   text-align: center;
+   box-shadow: 0 4px 8px 0 rgb(0, 0, 0), 0px 6px 20px 0 rgba(0, 0, 0, 0.19);
+   
+   margin: 5px;
+   word-wrap: break-word;
+   width: 100%; 
+
+
+
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+p{
+
+word-wrap: break-word;
+width: 100%;
 }
 
-.App-link {
-  color: #61dafb;
-}
+.editbox{
+    background-color:lightgrey;
+    border: 2px solid rgb(20, 17, 17);
+    width: fit-content;
+    height: fit-content;
+    box-shadow: 0 4px 8px 0 rgb(0, 0, 0), 0px 6px 20px 6px rgba(0, 0, 0, 0.19); 
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    margin: auto;
+    outline: 100em solid rgba(0, 0, 0, 0.873);
+    }
+    
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
