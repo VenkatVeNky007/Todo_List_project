@@ -13,7 +13,7 @@ const TodoEditBox=({hidebox, handleeditsubmit,
 
      <>
      <fieldset className="editbox" style={hidebox}>
-    <h1>ADD TODO</h1>
+    <h1>Edit TODO</h1>
     <form onSubmit={handleeditsubmit}>
 
     <label>Todo Name: </label>
