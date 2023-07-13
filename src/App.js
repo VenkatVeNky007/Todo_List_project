@@ -113,11 +113,11 @@ const rplace=todo.findIndex((vall)=>{
       settodo(deletetodo)
     }
 
-    return (< >
+    return (<div className='body'>
     <div className="body">
     <div className="main">
 
-    <fieldset>
+    <fieldset className='todolisty'>
     <h1>ADD TODO</h1>
     <form onSubmit={handlesubmit} >
 
@@ -151,7 +151,7 @@ const rplace=todo.findIndex((vall)=>{
       etododate={etododate}
       etodomessage={etodomessage}
        />
-    </>)
+    </div>)
 }
 // export default App
 export default App

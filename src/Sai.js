@@ -7,7 +7,7 @@ import {useState} from 'react'
 
 
 const Sai = ({todos,handledelete,displayedit}) => {
-
+// displaying todo part
    return(<>
  
     {todos.map((value,index)=>(<>
@@ -26,11 +26,11 @@ const Sai = ({todos,handledelete,displayedit}) => {
 
     <div id="dtodo3">
     
-    <img id="delimg"src="./edit.png" alt="edit image" onClick={()=>displayedit(value)} />
+    <img id="delimg"src="https://venkatvenky007.github.io/Todo_List_project/edit.png" alt="edit image" onClick={()=>displayedit(value)} />
     </div>
    
     <div id="dtodo4">
-    <img id="delimg"src="./delete.png" alt="delete image" onClick={()=>handledelete(index)} />
+    <img id="delimg"src="https://venkatvenky007.github.io/Todo_List_project/delete.png" alt="delete image" onClick={()=>handledelete(index)} />
     </div>
 
      </div>

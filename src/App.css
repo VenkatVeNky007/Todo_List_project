@@ -1,23 +1,29 @@
-
+.body{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+    background-color: whitesmoke;
+}
 
 
 .main{
     width:max-content;
     background-color:lightsalmon;
     position: relative;
-  
     margin: auto;
     width: 50em;
-    height: 41em;
+    height: 100%;
     padding-top:16px;
     box-sizing: border-box;
     box-shadow: 0 4px 8px 0 rgb(0, 0, 0), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-   
-  
+    
 }
 
 
-fieldset{
+.todolisty{
 background-color:lightgrey;
 border: 2px solid rgb(20, 17, 17);
 width: fit-content;
@@ -45,13 +51,13 @@ box-shadow: 0 4px 8px 0 rgb(0, 0, 0), 0px 6px 20px 6px rgba(0, 0, 0, 0.19);
     margin-top: 10px;
     /* box-shadow: 0 4px 8px 0 rgb(0, 0, 0), 0px 6px 20px 6px rgba(0, 0, 0, 0.19);   */
     padding: 16px;
-    overflow: scroll;
+    overflow-y: scroll;
+    
 
 }
 
-.clist::-webkit-scrollbar {
-  display: none;
-}
+
+
 
 
 
@@ -129,6 +135,48 @@ width: 100%;
     right: 0px;
     margin: auto;
     outline: 100em solid rgba(0, 0, 0, 0.873);
+    }
+
+
+    @media only screen and (max-width: 1000px) {
+        .main{
+            width: 100%;
+            box-sizing: border-box;
+        }
+        .todolisty{
+            width: 90%;
+            text-align: center;
+        }
+        .todolisty input{
+            display: block;
+            width: 50%;
+            margin: auto;
+            
+        }
+
+        .todolisty textarea{
+            width: 100%;
+        }
+
+        .editbox{
+            width: 90%;
+            text-align: center;
+
+        }
+
+        .editbox input{
+            width: 50%;
+            display: block;
+            margin: auto;
+        }
+
+        .editbox textarea{
+            width: 100%;
+        }
+
+        #delimg{
+            width: 3em;
+        }
     }
     
 
